@@ -11,5 +11,5 @@ This Jupyter notebook is the primary script for training predictive models.
 ### `main_metrics.r`
 This R script computes evaluation metrics using the outputs from `main_models.ipynb`.
 
-### `main_models.html`
+### `main_metrics.html`
 An R Markdown output that illustrates the application of the above with simulated data.
