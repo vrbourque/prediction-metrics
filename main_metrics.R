@@ -157,5 +157,5 @@ ggplot(data_fit_full, aes(x=x_measure, y=y_measure,group=label, color=label, fil
   geom_text_repel(data=data_fit_full[factor(data_fit_full$x_measure)=='0.1',], aes(x=0.1, y=mi, color=label, label=round(mi, 3)), hjust=-0.1, vjust=-0.1, size=2.5, color='black')+
   geom_text_repel(data=data_fit_full[factor(data_fit_full$x_measure)=='0.25',], aes(x=0.25, y=mi, color=label, label=round(mi, 3)), hjust=-0.1, vjust=-0.1, size=2.5, color='black')+
   geom_text_repel(data=data_fit_full[factor(data_fit_full$x_measure)=='0.5',], aes(x=0.5, y=mi, color=label, label=round(mi, 3)), hjust=-0.1, vjust=-0.1, size=2.5, color='black')+
-  geom_text(x=0.5, y=length(which(df$ID_binary!=1))/length(which(!is.na(df$ID_binary))), label='baseline probability of ID', color='black', size=3)
+  geom_text(x=0.5, y=length(which(df$ID_binary!=1))/length(which(!is.na(df$ID_binary))), label='baseline probability of not having ID', color='black', size=3)
 
